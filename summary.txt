@@ -1,0 +1,15 @@
+1. Copy the checkout files
+2. Add Dockerfile.dev to Client, worker and server projects
+3. Add nginx folder and Dockerfile.dev
+4. Add default.conf inside nginx folder
+
+For the prod:
+1. Prod docker file for server, worker, nginx
+2. Create nginx folder inside client, add default.conf
+3. Prod dockerfile for client
+4. take out this lines from app.test.js in client:
+const div = document.createElement('div');
+  ReactDOM.render(<App />, div);
+  ReactDOM.unmountComponentAtNode(div);
+5. add travis.yml
+after making chnages, say "git add .", "git commit -m "changed travis.yml"",
