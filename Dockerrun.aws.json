@@ -20,7 +20,7 @@
             "image": "maniks/multi-worker",
             "hostname": "worker",
             "essential": false,
-            "memory": 512            
+            "memory": 1048            
         },
         {
             "name": "nginx",
